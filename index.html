@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidenav">
+        <div class="logo">
+          <img src="C:\Users\USER\Desktop\Desktop\logo.jpeg" alt="Logo" />
+          <div class="text">
+            <h3>Untitled UI</h3>
+            <h4>store.untitledui.com</h4>
+          </div>
+        </div>
+        <button class="sidenav-btn" id="home-btn">
+          <i class="fas fa-home"></i>
+          <span class="btn-text">Home</span>
+        </button>
+        <button class="sidenav-btn" id="store-btn">
+          <i class="fas fa-store"></i>
+          <span class="btn-text">My Store</span>
+        </button>
+        <button class="sidenav-btn" id="project-btn">
+          <i class="fas fa-project-diagram"></i>
+          <span class="btn-text">My Projects</span>
+        </button>
+        <button id="collapse-btn" class="collapse-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="content">
+        <div class="page" id="homepage">
+          
+          <form id="user-form">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+            /><br />
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required /><br />
+
+            <label for="birth-date">Birth Date</label>
+            <input
+              type="date"
+              id="birth-date"
+              name="birth-date"
+              required
+            /><br />
+
+            <label for="profession">Profession</label>
+            <select id="profession" name="profession" required>
+              <option value="">Select Profession</option>
+              <option value="Developer">Developer</option>
+              <option value="designer">Designer</option>
+              <option value="manager">Manager</option></select
+            ><br />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br />
+            <label for="remember-me">
+              Remember Me
+              <input type="checkbox" id="remember-me" name="remember-me" />
+          </label> <br />
+          
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="page" id="storepage">Stores</div>
+        <div class="page" id="projectpage">Projects</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

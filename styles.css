@@ -234,3 +234,56 @@ form {
       margin-left: 0; 
     }
   }
+  #projectpage table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+    border: 1px solid #ddd;
+
+  }
+  
+  #projectpage th, #projectpage td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  #projectpage th {
+    background-color: white;
+    justify-content: center;
+  }
+  
+  #projectpage tr:hover {
+    background-color: wheat;
+  }
+  @media (max-width: 1000px) {
+    #projectpage table {
+      border: 0;
+      width: 100%;
+      font-family: "inter", sans-serif;
+      border-collapse:collapse;
+    }
+  
+    #projectpage th, #projectpage td {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #projectpage th {
+      background-color: #f4f4f4;
+    }
+  
+    #projectpage td {
+      border-top: 1px solid wheat;
+    }
+  
+    #projectpage tr {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    #projectpage tr:hover {
+      background-color:wheat;
+    }
+  }
